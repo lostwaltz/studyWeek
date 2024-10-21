@@ -15,12 +15,12 @@ public class QuestManager : MonoBehaviour
                 {
                     GameObject questManager = new GameObject("QuestManager");
 
-                    questManager.AddComponent<QuestManager>();
+                    instance = questManager.AddComponent<QuestManager>();
+                    DontDestroyOnLoad(questManager);
                 }
             }
             return instance;
         } }
-
 
     private void Awake()
     {
