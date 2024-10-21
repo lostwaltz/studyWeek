@@ -30,10 +30,6 @@ public class QuestManager : MonoBehaviour
 
             DontDestroyOnLoad(gameObject);
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 }
 
