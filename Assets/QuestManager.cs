@@ -15,7 +15,7 @@ public class QuestManager : MonoBehaviour
                 {
                     GameObject questManager = new GameObject("QuestManager");
 
-                    instance = questManager.AddComponent<QuestManager>();
+                    questManager.AddComponent<QuestManager>();
                 }
             }
             return instance;
@@ -29,6 +29,10 @@ public class QuestManager : MonoBehaviour
             instance = this;
 
             DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 }
