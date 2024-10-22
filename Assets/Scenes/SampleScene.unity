@@ -152,6 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3511f304a29533a498d6312f8dd90c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questDataCollection:
+  - {fileID: 11400000, guid: ccaf155517532764b9cbfdef1e92f520, type: 2}
+  - {fileID: 11400000, guid: a93fe207689726e4cb1c92aeb3ef932d, type: 2}
 --- !u!4 &358535578
 Transform:
   m_ObjectHideFlags: 0

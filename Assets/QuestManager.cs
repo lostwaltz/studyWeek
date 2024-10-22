@@ -7,6 +7,8 @@ public class QuestManager : MonoBehaviour
 {
     private static QuestManager instance;
 
+    public List<QuestDataSO> questDataCollection;
+
     public static QuestManager Instance { get {
             if (instance == null)
             {
@@ -33,6 +35,18 @@ public class QuestManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+
+        PrintQuestList();
+    }
+
+
+    private void PrintQuestList()
+    {
+        int index = 1;
+        foreach (var questData in questDataCollection)
+        {
+            questData.PrintQuestDataInfo(index++);
         }
     }
 }
