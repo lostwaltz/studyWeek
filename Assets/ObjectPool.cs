@@ -3,10 +3,17 @@ using System.Collections.Generic;
 
 public class ObjectPool : MonoBehaviour
 {
-    public List<GameObject> prefabs = new List<GameObject>();
+    [System.Serializable]
+    public class Pool
+    {
+        public string tag;
+        public GameObject prefab;
+    }
+
+    public List<Pool> prefabs = new List<Pool>();
 
     private Dictionary<string, List<GameObject>> objectPoolDictionary = new Dictionary<string, List<GameObject>>();
-    public int poolSize = 300;
+    public int poolSize = 10;
 
     void Start()
     {
@@ -15,14 +22,16 @@ public class ObjectPool : MonoBehaviour
         {
             for (int j = 0; j < poolSize; j++)
             {
-                GameObject instance = Instantiate(prefabs[i]);
+                GameObject instance = Instantiate(prefabs[i].prefab);
                 instance.SetActive(false);
 
+                if (!objectPoolDictionary.ContainsKey(prefabs[i].tag))
+                {
+                    objectPoolDictionary[prefabs[i].tag] = new List<GameObject>();
+                }
                 objectPoolDictionary[prefabs[i].tag].Add(instance);
             }
         }
-        
-        
     }
 
     public GameObject Get(string key)

@@ -36,7 +36,10 @@ public class QuestManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
 
+    private void Start()
+    {
         PrintQuestList();
     }
 
