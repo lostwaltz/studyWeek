@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: dabb8508ca9d55248ae8131c043b8d80
+  productGUID: ed8fe0af462dfce4ebc3949745b6093d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: SandBox_UI
+  productName: StudyWeek3
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -674,14 +674,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: SandBox_UI
+  metroPackageName: StudyWeek3
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: SandBox_UI
+  metroApplicationDescription: StudyWeek3
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -748,12 +748,12 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: fce237f5-63f4-44f0-990c-f68dbb346dde
+  cloudProjectId: 29c35d5c-5ea2-4bcf-8185-8d424b37ac30
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: SandBox_UI
+  projectName: StudyWeek3
   organizationId: lostwaltz89
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
